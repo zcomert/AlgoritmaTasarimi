@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Matris.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sayi.cs" />
     <Compile Include="Seri.cs" />
