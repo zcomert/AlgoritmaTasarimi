@@ -42,11 +42,12 @@ namespace Matematik
         /// <returns>Tek toplam sonucunu döner.</returns>
         public int TekToplam()
         {
+            int n = N;
             if (Cift())
-                N = N - 1;
+                n = n - 1;
             
-            N = (N + 1) / 2;
-            return N * N;
+            n = (n + 1) / 2;
+            return n * n;
         }
 
         /// <summary>
@@ -55,13 +56,31 @@ namespace Matematik
         /// <returns>Çift toplam değerini döner. </returns>
         public int CiftToplam()
         {
+            int n = N;
             if (Tek())
-                N = N - 1;
-            N = N / 2;
-            return N * (N + 1);
+                n = n - 1;
+            n = n / 2;
+            return n * (n + 1);
         }
 
 
+        /// <summary>
+        /// Asal sayı ise true aksi durumda false;
+        /// </summary>
+        /// <returns></returns>
+        public bool AsalSayiMi()
+        {
+            bool s = true;
+            for (int i = 2; i < N; i++)
+            {
+                if(N%i==0)
+                {
+                    s = false;
+                    break;
+                }
+            }
+            return s;
+        }
 
         
     }
