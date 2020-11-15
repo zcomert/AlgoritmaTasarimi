@@ -82,6 +82,33 @@ namespace Matematik
             return s;
         }
 
-        
+        /// <summary>
+        /// İlgili sayıya kadar olan tek sayıların listesi
+        /// </summary>
+        /// <returns></returns>
+        public List<int> TekSayilarListesi()
+        {
+            var sayilar = new List<int>();
+            for (int i = 1; i <= N; i += 2)
+                sayilar.Add(i);
+            return sayilar;
+        }
+
+
+        /// <summary>
+        /// İlgili sayıya kadar olan çift sayıların listesi
+        /// </summary>
+        /// <returns></returns>
+        public List<int> CiftSayilarListesi()
+        {
+            var sayilar = new List<int>();
+            for (int i = 2; i <= N; i += 2)
+                sayilar.Add(i);
+            return sayilar;
+        }
+
+
+
+
     }
 }
